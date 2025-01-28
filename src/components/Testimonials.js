@@ -108,8 +108,13 @@ const Testimonials = () => {
           </button>
         </div>
       </div>
-      <div>
-        <img src="/home/trait-vague.png" className="" alt=""/>
+      <div className="pt-5 text-center">
+        <img
+          src="/home/trait-vague.png"
+          className="w-75 w-md-50 mx-auto"
+          alt=""
+          style={{ maxWidth: "100%" }}
+        />
       </div>
       <div className="container-fluid py-4 mt-5 px-4 bg-orange-image" style={{ backgroundColor: '#FF6B00' }}>
         <div className="container">

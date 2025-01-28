@@ -54,8 +54,13 @@ const QuizThemes = () => {
       <button className="btn btn-outline-warning mt-3 voir-plus-button rounded-4 ">
         Voir plus <span className="arrow">→</span>
       </button>
-      <div className="pt-5">
-        <img src="/home/trait-vague.png  " className="" alt=""/>
+      <div className="pt-5 text-center">
+        <img
+          src="/home/trait-vague.png"
+          className="w-75 w-md-50 mx-auto"
+          alt=""
+          style={{ maxWidth: "100%" }}
+        />
       </div>
     </div>
    
