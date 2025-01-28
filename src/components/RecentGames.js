@@ -10,28 +10,39 @@ const RecentGames = () => {
       title: "Build Your Own Shopping App (Ages 10-13)",
       description: "Créez un compte, choisissez votre thématique et payez votre abonnement.",
       image: "/home/game1.png",
+      category: "Culture générale",
     },
     {
       id: 2,
       title: "Build Your Own Shopping App (Ages 10-13)",
       description: "Créez un compte, choisissez votre thématique et payez votre abonnement.",
       image: "/home/game2.png",
+      category: "Culture sociale",
+      
     },
     {
       id: 3,
       title: "Build Your Own Shopping App (Ages 10-13)",
       description: "Créez un compte, choisissez votre thématique et payez votre abonnement.",
       image: "/home/game3.png",
+      category: "Nos traditions",
     },
     {
       id: 4,
       title: "Build Your Own Shopping App (Ages 10-13)",
       description: "Créez un compte, choisissez votre thématique et payez votre abonnement.",
       image: "/home/game4.png",
+      category: "Villes et communes",
     },
   ];
 
+    const filteredGames =
+      activeTab === "Tous"
+        ? games
+        : games.filter((game) => game.category === activeTab);
+
   return (
+
     
     <section className="bg-bleu py-5">
       <div className="container">
@@ -53,7 +64,7 @@ const RecentGames = () => {
       </ul>
         <div className="row">
           
-        {games.map((game, index) => (
+        {filteredGames.map((game, index) => (
           <div className="col-lg-3 col-md-6 mb-4" key={index}>
             <div className=" card h-100 shadow-sm py-4 px-4">
               <img
