@@ -1,0 +1,152 @@
+.bg-bleu {
+    /* background-color: #000691; */
+    background-color:#0a1c39;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.bg-black{
+    background-color: black;
+}
+
+.textOrange{
+    color: #FF6D00 !important;
+}
+
+.bg-trans{
+    background-color: #c0bcbc20;
+   
+}
+
+.data-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.quiz-section {
+    background-color: #0a1c39;
+  }
+  
+  .section-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #FF6D00;
+  }
+  
+  .quiz-card {
+    background-color: #DBDCFF80;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    color: dark;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quiz-image {
+    width: 100%;
+    max-height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .quiz-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .quiz-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .play-button {
+    color: #FF6D00 !important;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .play-button .arrow {
+    margin-left: 5px;
+  }
+  
+  .voir-plus-button {
+    color: #FF6D00 !important;
+    border-color: #FF6D00 !important;
+    font-weight: bold;
+    text-transform: none;
+  }
+  
+  .voir-plus-button .arrow {
+    margin-left: 5px;
+  }
+.nav-link{
+  text-decoration: none !important;
+  color: #ffff !important;
+
+} 
+
+.nav-link.active{
+  /* text-decoration-color: #FF6D00!important; */
+  background-color: none !important;
+  border-bottom: 3px solid #FF6D00;
+  font-weight: 700;
+  
+}
+
+.card{
+  background-color:#DBDCFF80 !important;
+}
+
+.bg-image-newsletter{
+  background-image: url('C:\Project\game-app\public\home\motif-newsletter.png');
+}
+
+.logos-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+.logos-scroll {
+  display: flex;
+  animation: scroll 10s linear infinite;
+  width: fit-content;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause animation on hover */
+.logos-scroll:hover {
+  animation-play-state: paused;
+}
+
+.hover-opacity {
+  transition: opacity 0.2s ease;
+}
+.hover-opacity:hover {
+  opacity: 0.7;
+}
+
+.text-gray{
+  color:#4F4F4F
+}
+.bg-orange-image{
+  background-image: url('C:\Project\game-app\public\home\azerty.png');
+}
+
+.border-vertical{
+  border-right: 3px  black dashed ;
+  
+}
