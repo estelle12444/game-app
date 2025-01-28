@@ -109,7 +109,7 @@ const Testimonials = () => {
         </div>
       </div>
       <div>
-        <img src="/home/trait-vague.png  " className="" alt=""/>
+        <img src="/home/trait-vague.png" className="" alt=""/>
       </div>
       <div className="container-fluid py-4 mt-5 px-4 bg-orange-image" style={{ backgroundColor: '#FF6B00' }}>
         <div className="container">
