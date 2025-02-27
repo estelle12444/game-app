@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const partners = [
   { id: 1, name: 'Cargill', logo: 'cargill.png' },
@@ -13,13 +13,7 @@ const partners = [
   { id: 10, name: 'aDryada', logo: 'saco.png' }
 ];
 const Partners = () => {
-  const [email, setEmail] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle newsletter submission
-    console.log('Email submitted:', email);
-  };
 
   return (
     <div className="container-fluid pt-5">
@@ -55,49 +49,7 @@ const Partners = () => {
       </section>
 
       {/* Newsletter Section */}
-      <section className="mt-5 py-5 bg-image-newsletter ">
-        <div className="row justify-content-center ">
-          <div className="col-12 col-md-10 col-lg-8">
-            <div className="row align-items-center">
-              {/* Left Column */}
-              <div className="col-12 col-md-6 mb-4 mb-md-0 border-vertical">
-                <h2 className="h5 mb-2">Newsletter</h2>
-                <h3 className="h2 mb-4 fw-bold " style={{ color: '#4A4A4A' }}>
-                  Rejoignez la communauté et restez informé des dernières nouvelles
-                </h3>
-              </div>
-              
-              {/* Right Column */}
-              <div className="col-12 col-md-6 ">
-                <form onSubmit={handleSubmit}>
-                  <div className="mb-3">
-                    <label htmlFor="email" className="form-label">Email</label>
-                    <input
-                      type="email"
-                      className="form-control bg-light border-0 py-3"
-                      id="email"
-                      placeholder="Saisir votre adresse mail"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                    />
-                  </div>
-                  <button 
-                    type="submit" 
-                    className="btn bg-black text-white px-4 py-2"
-                    style={{
-                      borderRadius: '25px',
-                      minWidth: '120px'
-                    }}
-                  >
-                    Envoyer
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };

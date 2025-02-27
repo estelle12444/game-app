@@ -60,7 +60,7 @@ const HeroSection = () => {
                 </form>
                
                 <div className="text-center mt-3">
-                    <img src="/home/men.png" alt="Image" className="img-fluid" />
+                    <img src="/home/men.png" alt="Image1" className="img-fluid" />
                 </div>
             </div>
         </div>

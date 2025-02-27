@@ -11,8 +11,8 @@ const Header = () => {
           {/* Barre de navigation centrée */}
         <nav className="d-flex justify-content-center align-items-center gap-3 w-100">
           <Link to="/" className="text-light text-decoration-none">Accueil</Link>
-          <Link to="/lots" className="text-light text-decoration-none">Liste des lots</Link>
-          <Link to="/gagnants" className="text-light text-decoration-none">Liste des gagnants</Link>
+          <Link to="#" className="text-light text-decoration-none">Liste des lots</Link>
+          <Link to="#" className="text-light text-decoration-none">Liste des gagnants</Link>
         </nav>
 
         {/* Liens à droite */}

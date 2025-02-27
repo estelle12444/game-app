@@ -2,7 +2,7 @@ import React from "react";
 
 const Lots = () => {
   return (
-    <section className="py-5">
+    <section className="py-5  ">
       <div className="container">
         <h2 className="text-center mb-4">Liste des lots de la semaine</h2>
         <ul className="list-group">

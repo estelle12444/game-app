@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const QuizThemes = () => {
   const themes = [
@@ -23,6 +24,8 @@ const QuizThemes = () => {
       description: 'Description des video games',
     },
   ];
+
+  const navigate = useNavigate();
   return (
 
     <section className="quiz-section py-5">
@@ -43,7 +46,7 @@ const QuizThemes = () => {
                 <div className="quiz-content">
                   <h5 className="quiz-title">{theme.title}</h5>
                   <p className="quiz-description">{theme.description}</p>
-                  <button className="btn btn-link play-button">
+                  <button className="btn btn-link play-button"  onClick={() => navigate(`/categorie/${theme.id}`)}>
                     Jouer <span className="arrow">→</span>
                   </button>
                 </div>
